@@ -1,0 +1,10 @@
+F:\_API\msg\msgBotTest\bin\Debug\msgBotTest.exe
+F:\_API\msg\msgBotTest\bin\Debug\msgBotTest.pdb
+F:\_API\msg\msgBotTest\obj\Debug\msgBotTest.exe
+F:\_API\msg\msgBotTest\obj\Debug\msgBotTest.pdb
+F:\_API\msg\msgBotTest\obj\Debug\msgBotTest.csprojResolveAssemblyReference.cache
+D:\_CS\_API\msg\msgBotTest\obj\Debug\msgBotTest.exe
+D:\_CS\_API\msg\msgBotTest\obj\Debug\msgBotTest.pdb
+D:\_CS\_API\msg\msgBotTest\bin\Debug\msgBotTest.exe
+D:\_CS\_API\msg\msgBotTest\bin\Debug\msgBotTest.pdb
+D:\_CS\_API\msg\msgBotTest\obj\Debug\msgBotTest.csprojResolveAssemblyReference.cache

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67D7969B-B962-4D3D-8530-BF2731FBA1C7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>msg</RootNamespace>
+    <AssemblyName>msg</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSharpTest.Net.RpcLibrary">
+      <HintPath>..\DLL\CSharpTest.Net.RpcLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helper\ByteHelper.cs" />
+    <Compile Include="Helper\FreePortHelper.cs" />
+    <Compile Include="LINQ\Action.cs" />
+    <Compile Include="LINQ\ConcurrentDictionary.cs" />
+    <Compile Include="LINQ\Dynamic.cs" />
+    <Compile Include="LINQ\Func.cs" />
+    <Compile Include="LINQ\HashSet.cs" />
+    <Compile Include="LINQ\ISet.cs" />
+    <Compile Include="LINQ\mono-2.8.1\corlib\System\Action.cs" />
+    <Compile Include="LINQ\mono-2.8.1\corlib\System\Funcs.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Collections.Generic\HashSet.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\BinaryExpression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\ConditionalExpression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\ConstantExpression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\ElementInit.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\EmitContext.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\Expression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\ExpressionPrinter.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\ExpressionTransformer.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\ExpressionType.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\ExpressionVisitor.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\Expression_T.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\Extensions.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\InvocationExpression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\LambdaExpression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\ListInitExpression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\MemberAssignment.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\MemberBinding.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\MemberBindingType.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\MemberExpression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\MemberInitExpression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\MemberListBinding.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\MemberMemberBinding.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\MethodCallExpression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\NewArrayExpression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\NewExpression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\ParameterExpression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\TypeBinaryExpression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq.Expressions\UnaryExpression.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\Check.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\Enumerable.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\EnumerableExecutor.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\EnumerableExecutor_T.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\EnumerableQuery.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\EnumerableQuery_T.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\Grouping.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\IGrouping.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\ILookup_T.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\IOrderedEnumerable_T.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\IOrderedQueryable.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\IOrderedQueryable_T.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\IQueryable.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\IQueryable_T.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\IQueryProvider.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\Lookup.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\OrderedEnumerable.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\OrderedParallelQuery.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\OrderedSequence.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\ParallelEnumerable.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\ParallelExecutionMode.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\ParallelMergeOptions.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\ParallelQuery.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\Queryable.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\QueryableEnumerable.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\QueryableTransformer.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\QuickSort.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\SortContext.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\SortDirection.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Linq\SortSequenceContext.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Runtime.CompilerServices\DynamicAttribute.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Runtime.CompilerServices\ExecutionScope.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Runtime.CompilerServices\ExtensionAttribute.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Runtime.CompilerServices\IStrongBox.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Core\System.Runtime.CompilerServices\StrongBox_T.cs" />
+    <Compile Include="LINQ\mono-2.8.1\System.Data.Linq\src\DbLinq\MonoTODOAttribute.cs" />
+    <Compile Include="LINQ\System.Linq.Expressions.Assign.cs" />
+    <Compile Include="LINQ\Tuple\IStructuralComparable.cs" />
+    <Compile Include="LINQ\Tuple\IStructuralEquatable.cs" />
+    <Compile Include="LINQ\Tuple\Tuple.cs" />
+    <Compile Include="LINQ\_demo.cs" />
+    <Compile Include="mRpc.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\DLL\CSharpTest.Net.RpcLibrary.dll">
+      <Link>DLL\CSharpTest.Net.RpcLibrary.dll</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LINQ\mono-2.8.1\corlib\System.Diagnostics\Crap.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

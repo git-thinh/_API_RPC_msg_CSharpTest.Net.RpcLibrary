@@ -1,0 +1,9 @@
+F:\_API\msg\CSharpTest.Net.RpcLibrary.Test\obj\Debug\CSharpTest.Net.RpcLibrary.Test.csprojResolveAssemblyReference.cache
+F:\_API\msg\CSharpTest.Net.RpcLibrary.Test\bin\Debug\LICENSE-2.0.txt
+F:\_API\msg\CSharpTest.Net.RpcLibrary.Test\bin\Debug\CSharpTest.Net.RpcLibrary.Test.exe
+F:\_API\msg\CSharpTest.Net.RpcLibrary.Test\bin\Debug\CSharpTest.Net.RpcLibrary.Test.pdb
+F:\_API\msg\CSharpTest.Net.RpcLibrary.Test\bin\Debug\CSharpTest.Net.RpcLibrary.dll
+F:\_API\msg\CSharpTest.Net.RpcLibrary.Test\bin\Debug\CSharpTest.Net.RpcLibrary.pdb
+F:\_API\msg\CSharpTest.Net.RpcLibrary.Test\bin\Debug\CSharpTest.Net.RpcLibrary.xml
+F:\_API\msg\CSharpTest.Net.RpcLibrary.Test\obj\Debug\CSharpTest.Net.RpcLibrary.Test.exe
+F:\_API\msg\CSharpTest.Net.RpcLibrary.Test\obj\Debug\CSharpTest.Net.RpcLibrary.Test.pdb

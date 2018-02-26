@@ -1,0 +1,1640 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSharpTest.Net.RpcLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:CSharpTest.Net.RpcLibrary.RpcProtseq">
+            <summary>
+            Defines the various types of protocols that are supported by Win32 RPC
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtseq.ncacn_nb_tcp">
+            <summary>
+            Connection-oriented NetBIOS over Transmission Control Protocol (TCP) Client only: MS-DOS, Windows 3.x
+            Client and Server: Windows Server 2003, Windows XP, Windows 2000, Windows NT
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtseq.ncacn_nb_ipx">
+            <summary>
+            Connection-oriented NetBIOS over Internet Packet Exchange (IPX) Client only: MS-DOS, Windows 3.x
+            Client and Server: Windows Server 2003, Windows XP, Windows 2000, Windows NT
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtseq.ncacn_nb_nb">
+            <summary>
+            Connection-oriented NetBIOS Enhanced User Interface (NetBEUI) Client only: MS-DOS, Windows 3.x
+            Client and Server: Windows Server 2003, Windows XP, Windows 2000, Windows NT, Windows Me, Windows 98, Windows 95
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtseq.ncacn_ip_tcp">
+            <summary>
+            Connection-oriented Transmission Control Protocol/Internet Protocol (TCP/IP) Client only: MS-DOS, Windows 3.x, and Apple Macintosh
+            Client and Server: Windows Server 2003, Windows XP, Windows 2000, Windows NT, Windows Me, Windows 98, Windows 95
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtseq.ncacn_np">
+            <summary>
+            Connection-oriented named pipes Client only: MS-DOS, Windows 3.x, Windows 95
+            Client and Server: Windows Server 2003, Windows XP, Windows 2000, Windows NT
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtseq.ncacn_spx">
+            <summary>
+            Connection-oriented Sequenced Packet Exchange (SPX) Client only: MS-DOS, Windows 3.x
+            Client and Server: Windows Server 2003, Windows XP, Windows 2000, Windows NT, Windows Me, Windows 98, Windows 95
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtseq.ncacn_dnet_nsp">
+            <summary>
+            Connection-oriented DECnet transport 
+            Client only: MS-DOS, Windows 3.x
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtseq.ncacn_at_dsp">
+            <summary>
+            Connection-oriented AppleTalk DSP Client: Apple Macintosh
+            Server: Windows Server 2003, Windows XP, Windows 2000, Windows NT
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtseq.ncacn_vns_spp">
+            <summary>
+            Connection-oriented Vines scalable parallel processing (SPP) transport Client only: MS-DOS, Windows 3.x
+            Client and Server: Windows Server 2003, Windows XP, Windows 2000, Windows NT
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtseq.ncadg_ip_udp">
+            <summary>
+            Datagram (connectionless) User Datagram Protocol/Internet Protocol (UDP/IP) Client only: MS-DOS, Windows 3.x
+            Client and Server: Windows Server 2003, Windows XP, Windows 2000, Windows NT
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtseq.ncadg_ipx">
+            <summary>
+            Datagram (connectionless) IPX Client only: MS-DOS, Windows 3.x
+            Client and Server: Windows Server 2003, Windows XP, Windows 2000, Windows NT
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtseq.ncadg_mq">
+            <summary>
+            Datagram (connectionless) over the Microsoft Message Queue Server (MSMQ) Client only: Windows Me/98/95
+            Client and Server: Windows Server 2003, Windows XP, Windows 2000, Windows NT Server 4.0 with SP3 and later
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtseq.ncacn_http">
+            <summary>
+            Connection-oriented TCP/IP using Microsoft Internet Information Server as HTTP proxy Client only: Windows Me/98/95
+            Client and Server: Windows Server 2003, Windows XP, Windows 2000
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtseq.ncalrpc">
+            <summary>
+            Local procedure call 
+            Client and Server: Windows Server 2003, Windows XP, Windows 2000, Windows NT, Windows Me, Windows 98, Windows 95
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.RpcProtoseqType">
+            <summary>
+            Defines the type of protocol the client is connected with
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtoseqType.TCP">
+            <summary> TCP, UDP, IPX over TCP, etc </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtoseqType.NMP">
+            <summary> Named Pipes </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtoseqType.LRPC">
+            <summary> LPRC / Local RPC </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcProtoseqType.HTTP">
+            <summary> HTTP / IIS integrated </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.RpcError">
+            <summary> WIN32 RPC Error Codes </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.RpcProtectionLevel">
+            <summary>
+            The protection level of the communications, RPC_C_PROTECT_LEVEL_PKT_PRIVACY is 
+            the default for authenticated communications.
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.RpcAuthentication">
+            <summary>
+            The authentication type to be used for connection, GSS_NEGOTIATE / WINNT
+            are the most common.  Be aware that GSS_NEGOTIATE is not available unless
+            the machin is a member of a domain that is not running WinNT (or in legacy 
+            mode).
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Interop.UsageCounter.#ctor(System.String,System.Object[])">
+            <summary> Creates a composite name with the format and arguments specified </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Interop.UsageCounter.Increment``1(System.Action{``0},``0)">
+            <summary> Delegate fired inside lock if this is the first Increment() call on the name provided </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Interop.UsageCounter.Decrement(System.Threading.ThreadStart)">
+            <summary> Delegate fired inside lock if the Decrement() count reaches zero </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.Interop.RpcApi">
+            <summary>
+            WinAPI imports for RPC
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.IRpcClientInfo">
+            <summary>
+            An interface that provide contextual information about the client within an Rpc server call
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.IRpcClientInfo.IsClientLocal">
+            <summary>
+            Returns true if the caller is using LRPC
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.IRpcClientInfo.ClientAddress">
+            <summary>
+            Returns a most random set of bytes, undocumented Win32 value.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.IRpcClientInfo.ProtocolType">
+            <summary>
+            Defines the type of the procol being used in the communication, unavailable on Windows XP
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.IRpcClientInfo.ProtectionLevel">
+            <summary>
+            Returns the packet protection level of the communications
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.IRpcClientInfo.AuthenticationLevel">
+            <summary>
+            Returns the authentication level of the connection
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.IRpcClientInfo.ClientPid">
+            <summary>
+            Returns the ProcessId of the LRPC caller, may not be valid on all platforms
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.IRpcClientInfo.IsAuthenticated">
+            <summary>
+            Returns true if the caller has authenticated as a user
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.IRpcClientInfo.ClientPrincipalName">
+            <summary>
+            Returns the client user name if authenticated, not available on WinXP
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.IRpcClientInfo.ClientUser">
+            <summary>
+            Returns the identity of the client user or Anonymous if unauthenticated
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.IRpcClientInfo.IsImpersonating">
+            <summary>
+            Returns true if already impersonating the caller
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IRpcClientInfo.Impersonate">
+            <summary>
+            Returns a disposable context that is used to impersonate the calling user
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.Disposable">
+            <summary>
+            Wraps the IDisposable object interface for classes that desire to be sure of being called 
+            a single time for the dispose.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Disposable.#ctor">
+            <summary> </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Disposable.Finalize">
+            <summary> last-chance dispose </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Disposable.Dispose">
+            <summary> disposes of the object if it has not already been disposed </summary>
+        </member>
+        <member name="E:CSharpTest.Net.RpcLibrary.Disposable.Disposed">
+            <summary> Raised when the object is disposed </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Disposable.Assert">
+            <summary> Raises the ObjectDisposedException if this object has already been disposed </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Disposable.Dispose(System.Boolean)">
+            <summary> Your implementation of the dispose method </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.Equatable`1">
+            <summary> Provides a base-class for non-reference equality objects </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.Equatable`1.Comparer">
+            <summary> return a non-reference equality comparer for this class </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.Equatable`1.HashCode">
+            <summary> Extracts the correct hash code </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Equatable`1.Equals(`0)">
+            <summary> Returns true if the other object is equal to this one </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Equatable`1.Equals(System.Object)">
+            <summary> Returns true if the other object is equal to this one </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Equatable`1.GetHashCode">
+            <summary> Extracts the correct hash code </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Equatable`1.Equals(`0,`0)">
+            <summary> Compares the two objects for non-reference equality </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Equatable`1.GetHashCode(`0)">
+            <summary> Compares the two objects for non-reference equality </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Equatable`1.op_Equality(CSharpTest.Net.RpcLibrary.Equatable{`0},CSharpTest.Net.RpcLibrary.Equatable{`0})">
+            <summary> Compares the two objects for non-reference equality </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Equatable`1.op_Inequality(CSharpTest.Net.RpcLibrary.Equatable{`0},CSharpTest.Net.RpcLibrary.Equatable{`0})">
+            <summary> Compares the two objects for non-reference equality </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.Equatable`1.EqualityComparer">
+            <summary> Implements the equality comparer </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Equatable`1.EqualityComparer.Equals(`0,`0)">
+            <summary> Compares the two objects for non-reference equality </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.Equatable`1.EqualityComparer.GetHashCode(`0)">
+            <summary> Extracts the correct hash code </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.KeyValueUpdate`2">
+            <summary> Provides a delegate that performs an atomic update of a key/value pair </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.KeyValuePredicate`2">
+            <summary> Provides a delegate that performs a test on key/value pair </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.ICreateValue`2">
+            <summary>
+            An interface to provide conditional or custom creation logic to a concurrent dictionary.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.ICreateValue`2.CreateValue(`0,`1@)">
+            <summary>
+            Called when the key was not found within the dictionary to produce a new value that can be added.
+            Return true to continue with the insertion, or false to prevent the key/value from being inserted.
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.IUpdateValue`2">
+            <summary>
+            An interface to provide conditional or custom update logic to a concurrent dictionary.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IUpdateValue`2.UpdateValue(`0,`1@)">
+            <summary>
+            Called when the key was found within the dictionary to produce a modified value to update the item
+            to. Return true to continue with the update, or false to prevent the key/value from being updated.
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.ICreateOrUpdateValue`2">
+            <summary>
+            An interface to provide conditional or custom creation or update logic to a concurrent dictionary.
+            </summary>
+            <remarks>
+            Generally implemented as a struct and passed by ref to save stack space and to retrieve the values
+            that where inserted or updated.
+            </remarks>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.IRemoveValue`2">
+            <summary>
+            An interface to provide conditional removal of an item from a concurrent dictionary.
+            </summary>
+            <remarks>
+            Generally implemented as a struct and passed by ref to save stack space and to retrieve the values
+            that where inserted or updated.
+            </remarks>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IRemoveValue`2.RemoveValue(`0,`1)">
+            <summary>
+            Called when the dictionary is about to remove the key/value pair provided, return true to allow
+            it's removal, or false to prevent it from being removed.
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.IConcurrentDictionary`2">
+            <summary>
+            Extends the IDictionaryEx interface to encompass concurrent/atomic operations
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IConcurrentDictionary`2.GetOrAdd(`0,System.Converter{`0,`1})">
+            <summary>
+            Adds a key/value pair to the  <see cref="T:System.Collections.Generic.IDictionary`2"/> if the key does not already exist.
+            </summary>
+            <param name="key">The key of the element to add.</param>
+            <param name="fnCreate">Constructs a new value for the key.</param>
+            <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IDictionary`2"/> is read-only.</exception>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IConcurrentDictionary`2.AddOrUpdate(`0,`1,CSharpTest.Net.RpcLibrary.KeyValueUpdate{`0,`1})">
+            <summary>
+            Adds a key/value pair to the <see cref="T:System.Collections.Generic.IDictionary`2"/> if the key does not already exist, 
+            or updates a key/value pair if the key already exists.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IConcurrentDictionary`2.AddOrUpdate(`0,System.Converter{`0,`1},CSharpTest.Net.RpcLibrary.KeyValueUpdate{`0,`1})">
+            <summary>
+            Adds a key/value pair to the <see cref="T:System.Collections.Generic.IDictionary`2"/> if the key does not already exist, 
+            or updates a key/value pair if the key already exists.
+            </summary>
+            <remarks>
+            Adds or modifies an element with the provided key and value.  If the key does not exist in the collection,
+            the factory method fnCreate will be called to produce the new value, if the key exists, the converter method
+            fnUpdate will be called to create an updated value.
+            </remarks>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IConcurrentDictionary`2.AddOrUpdate``1(`0,``0@)">
+            <summary>
+            Add, update, or fetche a key/value pair from the dictionary via an implementation of the
+            <see cref="T:CSharpTest.Net.Collections.ICreateOrUpdateValue`2"/> interface.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IConcurrentDictionary`2.TryAdd(`0,System.Converter{`0,`1})">
+            <summary>
+            Adds an element with the provided key and value to the <see cref="T:System.Collections.Generic.IDictionary`2"/>
+            by calling the provided factory method to construct the value if the key is not already present in the collection.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IConcurrentDictionary`2.TryUpdate(`0,CSharpTest.Net.RpcLibrary.KeyValueUpdate{`0,`1})">
+            <summary>
+            Modify the value associated with the result of the provided update method
+            as an atomic operation, Allows for reading/writing a single record within
+            the tree lock.  Be cautious about the behavior and performance of the code 
+            provided as it can cause a dead-lock to occur.  If the method returns an
+            instance who .Equals the original, no update is applied.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IConcurrentDictionary`2.TryRemove(`0,CSharpTest.Net.RpcLibrary.KeyValuePredicate{`0,`1})">
+            <summary>
+            Removes the element with the specified key from the <see cref="T:System.Collections.Generic.IDictionary`2"/>
+            if the fnCondition predicate is null or returns true.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IConcurrentDictionary`2.TryRemove``1(`0,``0@)">
+            <summary>
+            Conditionally removes a key/value pair from the dictionary via an implementation of the
+            <see cref="T:CSharpTest.Net.Collections.IRemoveValue`2"/> interface.
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.IDictionaryEx`2">
+            <summary>
+            Extends the IDictionary interface to encompass the TryXxxx operations
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IDictionaryEx`2.GetOrAdd(`0,`1)">
+            <summary>
+            Adds a key/value pair to the  <see cref="T:System.Collections.Generic.IDictionary`2"/> if the key does not already exist.
+            </summary>
+            <param name="key">The key of the element to add.</param>
+            <param name="value">The value to be added, if the key does not already exist.</param>
+            <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IDictionary`2"/> is read-only.</exception>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IDictionaryEx`2.TryAdd(`0,`1)">
+            <summary>
+            Adds an element with the provided key and value to the <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            </summary>
+            <param name="key">The object to use as the key of the element to add.</param>
+            <param name="value">The object to use as the value of the element to add.</param>
+            <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IDictionary`2"/> is read-only.</exception>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IDictionaryEx`2.TryUpdate(`0,`1)">
+            <summary>
+            Updates an element with the provided key to the value if it exists.
+            </summary>
+            <returns>Returns true if the key provided was found and updated to the value.</returns>
+            <param name="key">The object to use as the key of the element to update.</param>
+            <param name="value">The new value for the key if found.</param>
+            <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IDictionary`2"/> is read-only.</exception>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IDictionaryEx`2.TryUpdate(`0,`1,`1)">
+            <summary>
+            Updates an element with the provided key to the value if it exists.
+            </summary>
+            <returns>Returns true if the key provided was found and updated to the value.</returns>
+            <param name="key">The object to use as the key of the element to update.</param>
+            <param name="value">The new value for the key if found.</param>
+            <param name="comparisonValue">The value that is compared to the value of the element with key.</param>
+            <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IDictionary`2"/> is read-only.</exception>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.IDictionaryEx`2.TryRemove(`0,`1@)">
+            <summary>
+            Removes the element with the specified key from the <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            </summary>
+            <returns>
+            true if the element is successfully removed; otherwise, false.  This method also returns false if <paramref name="key"/> was not found in the original <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            </returns>
+            <param name="key">The key of the element to remove.</param>
+            <param name="value">The value that was removed.</param>
+            <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IDictionary`2"/> is read-only.</exception>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.LurchTableOrder">
+            <summary>
+            Defines if and how items added to a LurchTable are linked together, this defines
+            the value returned from Peek/Dequeue as the oldest entry of the specified operation.
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.LurchTableOrder.None">
+            <summary> No linking </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.LurchTableOrder.Insertion">
+            <summary> Linked in insertion order </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.LurchTableOrder.Modified">
+            <summary> Linked by most recently inserted or updated </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.LurchTableOrder.Access">
+            <summary> Linked by most recently inserted, updated, or fetched </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.LurchTable`2">
+            <summary>
+            LurchTable stands for "Least Used Recently Concurrent Hash Table" and has definate
+            similarities to both the .NET 4 ConcurrentDictionary as well as Java's LinkedHashMap.
+            This gives you a thread-safe dictionary/hashtable that stores element ordering by
+            insertion, updates, or access.  In addition it can be configured to use a 'hard-limit'
+            count of items that will automatically 'pop' the oldest item in the collection.
+            </summary>
+            <typeparam name="TKey">The type of keys in the dictionary.</typeparam>
+            <typeparam name="TValue">The type of values in the dictionary.</typeparam>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.LurchTable`2.ItemUpdatedMethod">
+            <summary> Method signature for the ItemUpdated event </summary>
+        </member>
+        <member name="E:CSharpTest.Net.RpcLibrary.LurchTable`2.ItemRemoved">
+            <summary> Event raised after an item is removed from the collection </summary>
+        </member>
+        <member name="E:CSharpTest.Net.RpcLibrary.LurchTable`2.ItemUpdated">
+            <summary> Event raised after an item is updated in the collection </summary>
+        </member>
+        <member name="E:CSharpTest.Net.RpcLibrary.LurchTable`2.ItemAdded">
+            <summary> Event raised after an item is added to the collection </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.#ctor(System.Int32)">
+            <summary>Creates a LurchTable that can store up to (capacity) items efficiently.</summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.#ctor(System.Int32,CSharpTest.Net.RpcLibrary.LurchTableOrder)">
+            <summary>Creates a LurchTable that can store up to (capacity) items efficiently.</summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.#ctor(System.Int32,CSharpTest.Net.RpcLibrary.LurchTableOrder,System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>Creates a LurchTable that can store up to (capacity) items efficiently.</summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.#ctor(CSharpTest.Net.RpcLibrary.LurchTableOrder,System.Int32)">
+            <summary>Creates a LurchTable that orders items by (ordering) and removes items once the specified (limit) is reached.</summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.#ctor(CSharpTest.Net.RpcLibrary.LurchTableOrder,System.Int32,System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>Creates a LurchTable that orders items by (ordering) and removes items once the specified (limit) is reached.</summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.#ctor(CSharpTest.Net.RpcLibrary.LurchTableOrder,System.Int32,System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            Creates a LurchTable that orders items by (ordering) and removes items once the specified (limit) is reached.
+            </summary>
+            <param name="ordering">The type of linking for the items</param>
+            <param name="limit">The maximum allowable number of items, or int.MaxValue for unlimited</param>
+            <param name="hashSize">The number of hash buckets to use for the collection, usually 1/2 estimated capacity</param>
+            <param name="allocSize">The number of entries to allocate at a time, usually 1/16 estimated capacity</param>
+            <param name="lockSize">The number of concurrency locks to preallocate, usually 1/256 estimated capacity</param>
+            <param name="comparer">The element hash generator for keys</param>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.Dispose">
+            <summary>
+            Clears references to all objects and invalidates the collection
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.LurchTable`2.Count">
+            <summary>
+            Gets the number of elements contained in the <see cref="T:System.Collections.Generic.ICollection`1"/>.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.LurchTable`2.Ordering">
+            <summary>
+            Retrieves the LurchTableOrder Ordering enumeration this instance was created with.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.LurchTable`2.Comparer">
+            <summary>
+            Retrives the key comparer being used by this instance.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.LurchTable`2.Limit">
+            <summary>
+            Retrives the record limit allowed in this instance.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.Initialize">
+            <summary>
+            WARNING: not thread-safe, reinitializes all internal structures.  Use Clear() for a thread-safe
+            delete all.  If you have externally provided exclusive access this method may be used to more
+            efficiently clear the collection.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.Clear">
+            <summary>
+            Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1"/>.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.ContainsKey(`0)">
+            <summary>
+            Determines whether the <see cref="T:System.Collections.Generic.IDictionary`2"/> contains an element with the specified key.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.LurchTable`2.Item(`0)">
+            <summary>
+            Gets or sets the element with the specified key.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.TryGetValue(`0,`1@)">
+            <summary>
+            Gets the value associated with the specified key.
+            </summary>
+            <returns>
+            true if the object that implements <see cref="T:System.Collections.Generic.IDictionary`2"/> contains an element with the specified key; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.Add(`0,`1)">
+            <summary>
+            Adds an element with the provided key and value to the <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.Remove(`0)">
+            <summary>
+            Removes the element with the specified key from the <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            </summary>
+            <returns>
+            true if the element is successfully removed; otherwise, false.  This method also returns false if <paramref name="key"/> was not found in the original <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            </returns>
+            <param name="key">The key of the element to remove.</param>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.GetOrAdd(`0,`1)">
+            <summary>
+            Adds a key/value pair to the  <see cref="T:System.Collections.Generic.IDictionary`2"/> if the key does not already exist.
+            </summary>
+            <param name="key">The key of the element to add.</param>
+            <param name="value">The value to be added, if the key does not already exist.</param>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.TryAdd(`0,`1)">
+            <summary>
+            Adds an element with the provided key and value to the <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            </summary>
+            <param name="key">The object to use as the key of the element to add.</param>
+            <param name="value">The object to use as the value of the element to add.</param>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.TryUpdate(`0,`1)">
+            <summary>
+            Updates an element with the provided key to the value if it exists.
+            </summary>
+            <returns>Returns true if the key provided was found and updated to the value.</returns>
+            <param name="key">The object to use as the key of the element to update.</param>
+            <param name="value">The new value for the key if found.</param>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.TryUpdate(`0,`1,`1)">
+            <summary>
+            Updates an element with the provided key to the value if it exists.
+            </summary>
+            <returns>Returns true if the key provided was found and updated to the value.</returns>
+            <param name="key">The object to use as the key of the element to update.</param>
+            <param name="value">The new value for the key if found.</param>
+            <param name="comparisonValue">The value that is compared to the value of the element with key.</param>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.TryRemove(`0,`1@)">
+            <summary>
+            Removes the element with the specified key from the <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            </summary>
+            <returns>
+            true if the element is successfully removed; otherwise, false.  This method also returns false if <paramref name="key"/> was not found in the original <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            </returns>
+            <param name="key">The key of the element to remove.</param>
+            <param name="value">The value that was removed.</param>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.GetOrAdd(`0,System.Converter{`0,`1})">
+            <summary>
+            Adds a key/value pair to the  <see cref="T:System.Collections.Generic.IDictionary`2"/> if the key does not already exist.
+            </summary>
+            <param name="key">The key of the element to add.</param>
+            <param name="fnCreate">Constructs a new value for the key.</param>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.AddOrUpdate(`0,`1,CSharpTest.Net.RpcLibrary.KeyValueUpdate{`0,`1})">
+            <summary>
+            Adds a key/value pair to the <see cref="T:System.Collections.Generic.IDictionary`2"/> if the key does not already exist, 
+            or updates a key/value pair if the key already exists.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.AddOrUpdate(`0,System.Converter{`0,`1},CSharpTest.Net.RpcLibrary.KeyValueUpdate{`0,`1})">
+            <summary>
+            Adds a key/value pair to the <see cref="T:System.Collections.Generic.IDictionary`2"/> if the key does not already exist, 
+            or updates a key/value pair if the key already exists.
+            </summary>
+            <remarks>
+            Adds or modifies an element with the provided key and value.  If the key does not exist in the collection,
+            the factory method fnCreate will be called to produce the new value, if the key exists, the converter method
+            fnUpdate will be called to create an updated value.
+            </remarks>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.AddOrUpdate``1(`0,``0@)">
+            <summary>
+            Add, update, or fetche a key/value pair from the dictionary via an implementation of the
+            <see cref="T:CSharpTest.Net.Collections.ICreateOrUpdateValue`2"/> interface.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.TryAdd(`0,System.Converter{`0,`1})">
+            <summary>
+            Adds an element with the provided key and value to the <see cref="T:System.Collections.Generic.IDictionary`2"/>
+            by calling the provided factory method to construct the value if the key is not already present in the collection.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.TryUpdate(`0,CSharpTest.Net.RpcLibrary.KeyValueUpdate{`0,`1})">
+            <summary>
+            Modify the value associated with the result of the provided update method
+            as an atomic operation, Allows for reading/writing a single record within
+            the syncronization lock.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.TryRemove(`0,CSharpTest.Net.RpcLibrary.KeyValuePredicate{`0,`1})">
+            <summary>
+            Removes the element with the specified key from the <see cref="T:System.Collections.Generic.IDictionary`2"/>
+            if the fnCondition predicate is null or returns true.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.TryRemove``1(`0,``0@)">
+            <summary>
+            Conditionally removes a key/value pair from the dictionary via an implementation of the
+            <see cref="T:CSharpTest.Net.Collections.IRemoveValue`2"/> interface.
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.LurchTable`2.Enumerator">
+            <summary>
+            Provides an enumerator that iterates through the collection.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.Enumerator.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.LurchTable`2.Enumerator.Current">
+            <summary>
+            Gets the element in the collection at the current position of the enumerator.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.Enumerator.MoveNext">
+            <summary>
+            Advances the enumerator to the next element of the collection.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.Enumerator.Reset">
+            <summary>
+            Sets the enumerator to its initial position, which is before the first element in the collection.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.LurchTable`2.KeyCollection">
+            <summary>
+            Provides the collection of Keys for the LurchTable
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.KeyCollection.Contains(`0)">
+            <summary>
+            Determines whether the <see cref="T:System.Collections.Generic.ICollection`1"/> contains a specific value.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.KeyCollection.CopyTo(`0[],System.Int32)">
+            <summary>
+            Copies the elements of the <see cref="T:System.Collections.Generic.ICollection`1"/> to an <see cref="T:System.Array"/>, starting at a particular <see cref="T:System.Array"/> index.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.LurchTable`2.KeyCollection.Count">
+            <summary>
+            Gets the number of elements contained in the <see cref="T:System.Collections.Generic.ICollection`1"/>.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.KeyCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.LurchTable`2.KeyCollection.Enumerator">
+            <summary>
+            Provides an enumerator that iterates through the collection.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.KeyCollection.Enumerator.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.LurchTable`2.KeyCollection.Enumerator.Current">
+            <summary>
+            Gets the element in the collection at the current position of the enumerator.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.KeyCollection.Enumerator.MoveNext">
+            <summary>
+            Advances the enumerator to the next element of the collection.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.KeyCollection.Enumerator.Reset">
+            <summary>
+            Sets the enumerator to its initial position, which is before the first element in the collection.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.LurchTable`2.Keys">
+            <summary>
+            Gets an <see cref="T:System.Collections.Generic.ICollection`1"/> containing the keys of the <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.LurchTable`2.ValueCollection">
+            <summary>
+            Provides the collection of Values for the LurchTable
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.ValueCollection.Contains(`1)">
+            <summary>
+            Determines whether the <see cref="T:System.Collections.Generic.ICollection`1"/> contains a specific value.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.ValueCollection.CopyTo(`1[],System.Int32)">
+            <summary>
+            Copies the elements of the <see cref="T:System.Collections.Generic.ICollection`1"/> to an <see cref="T:System.Array"/>, starting at a particular <see cref="T:System.Array"/> index.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.LurchTable`2.ValueCollection.Count">
+            <summary>
+            Gets the number of elements contained in the <see cref="T:System.Collections.Generic.ICollection`1"/>.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.ValueCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.LurchTable`2.ValueCollection.Enumerator">
+            <summary>
+            Provides an enumerator that iterates through the collection.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.ValueCollection.Enumerator.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.LurchTable`2.ValueCollection.Enumerator.Current">
+            <summary>
+            Gets the element in the collection at the current position of the enumerator.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.ValueCollection.Enumerator.MoveNext">
+            <summary>
+            Advances the enumerator to the next element of the collection.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.ValueCollection.Enumerator.Reset">
+            <summary>
+            Sets the enumerator to its initial position, which is before the first element in the collection.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.LurchTable`2.Values">
+            <summary>
+            Gets an <see cref="T:System.Collections.Generic.ICollection`1"/> containing the values in the <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.Peek(System.Collections.Generic.KeyValuePair{`0,`1}@)">
+            <summary>
+            Retrieves the oldest entry in the collection based on the ordering supplied to the constructor.
+            </summary>
+            <returns>True if the out parameter value was set.</returns>
+            <exception cref="T:System.InvalidOperationException">Raised if the table is unordered</exception>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.Dequeue">
+            <summary>
+            Removes the oldest entry in the collection based on the ordering supplied to the constructor.
+            If an item is not available a busy-wait loop is used to wait for for an item.
+            </summary>
+            <returns>The Key/Value pair removed.</returns>
+            <exception cref="T:System.InvalidOperationException">Raised if the table is unordered</exception>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.TryDequeue(System.Collections.Generic.KeyValuePair{`0,`1}@)">
+            <summary>
+            Removes the oldest entry in the collection based on the ordering supplied to the constructor.
+            </summary>
+            <returns>False if no item was available</returns>
+            <exception cref="T:System.InvalidOperationException">Raised if the table is unordered</exception>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.LurchTable`2.TryDequeue(System.Predicate{System.Collections.Generic.KeyValuePair{`0,`1}},System.Collections.Generic.KeyValuePair{`0,`1}@)">
+            <summary>
+            Removes the oldest entry in the collection based on the ordering supplied to the constructor.
+            </summary>
+            <returns>False if no item was available</returns>
+            <exception cref="T:System.InvalidOperationException">Raised if the table is unordered</exception>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.mFile">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.mFile.CreateFileBlank(System.String,System.Int32)">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.FileMapIOException">
+            <summary>Exception class thrown by the library</summary>
+            <remarks>
+              Represents an exception occured as a result of an
+              invalid IO operation on any of the File mapping classes
+              It wraps the error message and the underlying Win32 error
+              code that caused the error.
+            </remarks>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.FileMapIOException.Win32ErrorCode">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.FileMapIOException.Message">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.FileMapIOException.#ctor(System.Int32)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.FileMapIOException.#ctor(System.String)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.FileMapIOException.#ctor(System.String,System.Exception)">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.MapProtection">
+            <summary>
+              Specifies page protection for the mapped file
+              These correspond to the PAGE_XXX set of flags
+              passed to CreateFileMapping()
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.MapProtection.PageNone">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.MapProtection.PageReadOnly">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.MapProtection.PageReadWrite">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.MapProtection.PageWriteCopy">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.MapProtection.SecImage">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.MapProtection.SecReserve">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.MapProtection.SecCommit">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.MapProtection.SecNoCache">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.MapViewStream">
+            <summary>
+              Allows you to read/write from/to
+              a view of a memory mapped file.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MapViewStream.#ctor(System.IntPtr,System.Int64,CSharpTest.Net.RpcLibrary.MapProtection)">
+            <summary>
+            Constructor used internally by MemoryMappedFile.
+            </summary>
+            <param name="baseAddress">base address where the view starts</param>
+            <param name="length">Length of view, in bytes</param>
+            <param name="protection"></param>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MapViewStream.Finalize">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.MapViewStream.CanRead">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.MapViewStream.CanSeek">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.MapViewStream.CanWrite">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.MapViewStream.Length">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.MapViewStream.Position">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MapViewStream.Flush">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MapViewStream.Read(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MapViewStream.Write(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MapViewStream.Seek(System.Int64,System.IO.SeekOrigin)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MapViewStream.SetLength(System.Int64)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MapViewStream.Close">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MapViewStream.Dispose">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MapViewStream.Dispose(System.Boolean)">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.MapAccess">
+            <summary>
+              Specifies access for the mapped file.
+              These correspond to the FILE_MAP_XXX
+              constants used by MapViewOfFile[Ex]()
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.MapAccess.FileMapCopy">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.MapAccess.FileMapWrite">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.MapAccess.FileMapRead">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.MapAccess.FileMapAllAccess">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.MemoryMappedFile">
+            <summary>Wrapper class around the Win32 MMF APIs</summary>
+            <remarks>
+               Allows you to easily use memory mapped files on
+               .NET applications.
+               Currently, not all functionality provided by 
+               the Win32 system is avaliable. Things that are not 
+               supported include:
+               <list>
+                  <item>You can't specify security descriptors</item>
+                  <item>You can't build the memory mapped file
+                      on top of a System.IO.File already opened</item>
+               </list>
+               The class is currently MarshalByRefObject, but I would
+               be careful about possible interactions!
+            </remarks>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.MemoryMappedFile.IsOpen">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MemoryMappedFile.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MemoryMappedFile.Finalize">
+            <summary>
+            Finalizer
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MemoryMappedFile.Create(CSharpTest.Net.RpcLibrary.MapProtection,System.Int64,System.String)">
+            <summary>
+              Create an unnamed map object with no file backing
+            </summary>
+            <param name="protection">desired access to the 
+                       mapping object</param>
+            <param name="maxSize">maximum size of filemap object</param>
+            <param name="name">name of file mapping object</param>
+            <returns>The memory mapped file instance</returns>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MemoryMappedFile.Create(CSharpTest.Net.RpcLibrary.MapProtection,System.Int64)">
+            <summary>
+              Create an named map object with no file backing
+            </summary>
+            <param name="protection">desired access to the 
+                       mapping object</param>
+            <param name="maxSize">maximum size of filemap object</param>
+            <returns>The memory mapped file instance</returns>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MemoryMappedFile.Create(System.String,CSharpTest.Net.RpcLibrary.MapProtection)">
+            <summary>
+              Create an unnamed map object with a maximum size
+              equal to that of the file
+            </summary>
+            <param name="fileName">name of backing file</param>
+            <param name="protection">desired access to the 
+                       mapping object</param>
+            <returns>The memory mapped file instance</returns>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MemoryMappedFile.Create(System.String,CSharpTest.Net.RpcLibrary.MapProtection,System.Int64)">
+            <summary>
+              Create an unnamed map object 
+            </summary>
+            <param name="fileName">name of backing file</param>
+            <param name="protection">desired access to the 
+                       mapping object</param>
+            <param name="maxSize">maximum size of filemap 
+                       object, or -1 for size of file</param>
+            <returns>The memory mapped file instance</returns>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MemoryMappedFile.Create(System.String,CSharpTest.Net.RpcLibrary.MapProtection,System.Int64,System.String)">
+            <summary>
+              Create a named map object 
+            </summary>
+            <param name="fileName">name of backing file, or null 
+                       for a pagefile-backed map</param>
+            <param name="protection">desired access to the mapping 
+                       object</param>
+            <param name="maxSize">maximum size of filemap object, or 0 
+                       for size of file</param>
+            <param name="name">name of file mapping object</param>
+            <returns>The memory mapped file instance</returns>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MemoryMappedFile.Open(CSharpTest.Net.RpcLibrary.MapAccess,System.String)">
+            <summary>
+              Open an existing named File Mapping object
+            </summary>
+            <param name="access">desired access to the map</param>
+            <param name="name">name of object</param>
+            <returns>The memory mapped file instance</returns>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MemoryMappedFile.Close">
+            <summary>
+              Close this File Mapping object
+              From here on, You can't do anything with it
+              but the open views remain valid.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MemoryMappedFile.MapView(CSharpTest.Net.RpcLibrary.MapAccess,System.Int64,System.Int32)">
+            <summary>
+              Map a view of the file mapping object
+              This returns a stream, giving you easy access to the memory,
+              as you can use StreamReaders and StreamWriters on top of it
+            </summary>
+            <param name="access">desired access to the view</param>
+            <param name="offset">offset of the file mapping object to 
+                       start view at</param>
+            <param name="size">size of the view</param>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MemoryMappedFile.MapView(CSharpTest.Net.RpcLibrary.MapAccess,System.Int64,System.IntPtr)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MemoryMappedFile.Dispose">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.MemoryMappedFile.Dispose(System.Boolean)">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.Win32MapApis">
+            <summary>Win32 APIs used by the library</summary>
+            <remarks>
+              Defines the PInvoke functions we use
+              to access the FileMapping Win32 APIs
+            </remarks>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.msg">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.msg.BuildHeader(CSharpTest.Net.RpcLibrary.msgDataEncode,System.Byte[],CSharpTest.Net.RpcLibrary.msgSender)">
+            <summary> 
+            </summary>
+            <param name="dataType"></param>
+            <param name="data"></param>
+            <param name="sender"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.msg.Builder(CSharpTest.Net.RpcLibrary.msgDataEncode,System.String,CSharpTest.Net.RpcLibrary.msgSender)">
+            <summary> 
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.msg.Builder(CSharpTest.Net.RpcLibrary.msgDataEncode,System.Decimal,CSharpTest.Net.RpcLibrary.msgSender)">
+            <summary> 
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.msg.Builder(CSharpTest.Net.RpcLibrary.msgDataEncode,System.Double,CSharpTest.Net.RpcLibrary.msgSender)">
+            <summary> 
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.msg.Builder(CSharpTest.Net.RpcLibrary.msgDataEncode,System.Int64,CSharpTest.Net.RpcLibrary.msgSender)">
+            <summary> 
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.msg.Builder(CSharpTest.Net.RpcLibrary.msgDataEncode,System.Int32,CSharpTest.Net.RpcLibrary.msgSender)">
+            <summary> 
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.msg.CreateMsgID">
+            <summary> 
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.msg.GetBytesASCII(System.String,System.Int32)">
+            <summary> 
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.msg.GetBytes(System.Decimal)">
+            <summary> 
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.msg.ToDecimal(System.Byte[])">
+            <summary> 
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.msgSender">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.msgSender.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.msgSender.#ctor(CSharpTest.Net.RpcLibrary.RpcProtseq,System.String,System.String)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.msgSender.#ctor(CSharpTest.Net.RpcLibrary.RpcProtseq,System.String,System.String,System.String)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.msgSender.#ctor(CSharpTest.Net.RpcLibrary.RpcProtseq,System.String,System.String,System.String,System.String)">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.msgSender.Protocol">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.msgSender.EndPoint">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.msgSender.CodeAPI">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.msgSender.Authentication">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.msgSender.Username">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.msgSender.Password">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.msgSender.Token">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.msgDataEncode">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgDataEncode.ping">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgDataEncode.string_ascii">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgDataEncode.string_utf8">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgDataEncode.string_base64">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgDataEncode.number_decimal">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgDataEncode.number_long">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgDataEncode.number_double">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgDataEncode.number_int">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgDataEncode.number_byte">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgDataEncode.update_node">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.msgType">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgType.string_ascii">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgType.string_utf8">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.msgAuthentication">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgAuthentication.none">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgAuthentication.login">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.msgAuthentication.token">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.msgConst">
+            <summary> 
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.Resources.ExceptionStrings">
+            <summary>
+            Returns the raw exception strings.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.Resources.ExceptionStrings.RpcException">
+            <summary>
+            Unspecified rpc error
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.Resources.ExceptionStrings.RpcException_String_message_">
+            <summary>
+            {0}
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.RpcException">
+            <summary>
+            Exception class: RpcException : System.ComponentModel.Win32Exception
+            Unspecified rpc error
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serialization constructor
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcException.#ctor">
+            <summary>
+            Unspecified rpc error
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcException.#ctor(System.Exception)">
+            <summary>
+            Unspecified rpc error
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcException.Assert(System.Boolean)">
+            <summary>
+            if(condition == false) throws Unspecified rpc error
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcException.#ctor(System.String)">
+            <summary>
+            {0}
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcException.#ctor(System.String,System.Exception)">
+            <summary>
+            {0}
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcException.Assert(System.Boolean,System.String)">
+            <summary>
+            if(condition == false) throws {0}
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcException.#ctor(CSharpTest.Net.RpcLibrary.RpcError)">
+            <summary>
+            Exception class: RpcException : System.ComponentModel.Win32Exception
+            Unspecified rpc error
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.RpcException.RpcError">
+            <summary>
+            Returns the RPC Error as an enumeration
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcException.Assert(CSharpTest.Net.RpcLibrary.RpcError)">
+            <summary>
+            Asserts that the argument is set to RpcError.RPC_S_OK or throws a new exception.
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.RpcClientApi">
+            <summary>
+            Provides a connection-based wrapper around the RPC client
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcClientApi.IID">
+            <summary> The interface Id the client is connected to </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcClientApi.#ctor(System.Guid,CSharpTest.Net.RpcLibrary.RpcProtseq,System.String,System.String)">
+            <summary>
+            Connects to the provided server interface with the given protocol and server:endpoint
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcClientApi.Dispose">
+            <summary>
+            Disconnects the client and frees any resources.
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.RpcClientApi.Anonymous">
+            <summary>
+            Returns a constant NetworkCredential that represents the Anonymous user
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.RpcClientApi.Self">
+            <summary>
+            Returns a constant NetworkCredential that represents the current Windows user
+            </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.RpcClientApi.Protocol">
+            <summary>
+            The protocol that was provided to the constructor
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcClientApi.Connect">
+            <summary>
+            Connects the client; however, this is a soft-connection and validation of 
+            the connection will not take place until the first call is attempted.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcClientApi.AuthenticateAs(System.Net.NetworkCredential)">
+            <summary>
+            Adds authentication information to the client, use the static Self to
+            authenticate as the currently logged on Windows user.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcClientApi.AuthenticateAs(System.String,System.Net.NetworkCredential)">
+            <summary>
+            Adds authentication information to the client, use the static Self to
+            authenticate as the currently logged on Windows user.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcClientApi.AuthenticateAs(System.String,System.Net.NetworkCredential,CSharpTest.Net.RpcLibrary.RpcProtectionLevel,CSharpTest.Net.RpcLibrary.RpcAuthentication[])">
+            <summary>
+            Adds authentication information to the client, use the static Self to
+            authenticate as the currently logged on Windows user.  This overload allows
+            you to specify the privacy level and authentication types to try. Normally
+            these default to RPC_C_PROTECT_LEVEL_PKT_PRIVACY, and both RPC_C_AUTHN_GSS_NEGOTIATE
+            or RPC_C_AUTHN_WINNT if that fails.  If credentials is null, or is the Anonymous
+            user, RPC_C_PROTECT_LEVEL_DEFAULT and RPC_C_AUTHN_NONE are used instead.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcClientApi.Execute(System.Byte[])">
+            <summary>
+            Sends a message as an array of bytes and retrieves the response from the server, if
+            AuthenticateAs() has not been called, the client will authenticate as Anonymous.
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.RpcServerApi">
+            <summary>
+            Provides server-side services for RPC
+            </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcServerApi.MAX_CALL_LIMIT">
+            <summary> The max limit of in-flight calls </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcServerApi.DEF_REQ_LIMIT">
+            <summary> Use the default request limits </summary>
+        </member>
+        <member name="F:CSharpTest.Net.RpcLibrary.RpcServerApi.IID">
+            <summary> The interface Id the service is using </summary>
+        </member>
+        <member name="P:CSharpTest.Net.RpcLibrary.RpcServerApi.VerboseLogging">
+            <summary>
+            Enables verbose logging of the RPC calls to the Trace window
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcServerApi.#ctor(System.Guid)">
+            <summary>
+            Constructs an RPC server for the given interface guid, the guid is used to identify multiple rpc
+            servers/services within a single process.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcServerApi.#ctor(System.Guid,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Constructs an RPC server for the given interface guid, the guid is used to identify multiple rpc
+            servers/services within a single process.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcServerApi.Dispose">
+            <summary>
+            Disposes of the server and stops listening if the server is currently listening
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcServerApi.AddProtocol(CSharpTest.Net.RpcLibrary.RpcProtseq,System.String,System.Int32)">
+            <summary>
+            Used to ensure that the server is listening with a specific protocol type.  Once invoked this
+            can not be undone, and all RPC servers within the process will be available on that protocol
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcServerApi.AddAuthentication(CSharpTest.Net.RpcLibrary.RpcAuthentication)">
+            <summary>
+            Adds a type of authentication sequence that will be allowed for RPC connections to this process.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcServerApi.AddAuthentication(CSharpTest.Net.RpcLibrary.RpcAuthentication,System.String)">
+            <summary>
+            Adds a type of authentication sequence that will be allowed for RPC connections to this process.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcServerApi.StartListening">
+            <summary>
+            Starts the RPC listener for this instance, if this is the first RPC server instance the process
+            starts listening on the registered protocols.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcServerApi.StopListening">
+            <summary>
+            Stops listening for this instance, if this is the last instance to stop listening the process
+            stops listening on all registered protocols.
+            </summary>
+        </member>
+        <member name="M:CSharpTest.Net.RpcLibrary.RpcServerApi.Execute(CSharpTest.Net.RpcLibrary.IRpcClientInfo,System.Byte[])">
+            <summary>
+            Can be over-ridden in a derived class to handle the incomming RPC request, or you can
+            subscribe to the OnExecute event.
+            </summary>
+        </member>
+        <member name="E:CSharpTest.Net.RpcLibrary.RpcServerApi.OnExecute">
+            <summary>
+            Allows a single subscription to this event to handle incomming requests rather than 
+            deriving from and overriding the Execute call.
+            </summary>
+        </member>
+        <member name="T:CSharpTest.Net.RpcLibrary.RpcServerApi.RpcExecuteHandler">
+            <summary>
+            The delegate format for the OnExecute event
+            </summary>
+        </member>
+        <member name="T:Check">
+            <summary>
+            provides a set of runtime validations for inputs
+            </summary>
+        </member>
+        <member name="M:Check.Assert``1(System.Boolean)">
+            <summary>
+            Verifies that the condition is true and if it fails constructs the specified type of
+            exception and throws.
+            </summary>
+        </member>
+        <member name="M:Check.Assert``1(System.Boolean,System.String)">
+            <summary>
+            Verifies that the condition is true and if it fails constructs the specified type of
+            exception with any arguments provided and throws.
+            </summary>
+        </member>
+        <member name="T:Check.ExceptionBuilder">
+            <summary>
+            Used to delay creation of the excpetion until the condition fails.
+            </summary>
+        </member>
+        <member name="M:Check.Assert(System.Boolean,Check.ExceptionBuilder)">
+            <summary>
+            Verifies that the condition is true and if it fails throws the execption returned
+            by fnExceptionBuilder()
+            </summary>
+        </member>
+        <member name="M:Check.Assert``1(System.Boolean,System.String,System.Exception)">
+            <summary>
+            Verifies that the condition is true and if it fails constructs the specified type of
+            exception with any arguments provided and throws.
+            </summary>
+        </member>
+        <member name="M:Check.NotNull``1(``0)">
+            <summary>
+            Verifies that value is not null and returns the value or throws ArgumentNullException
+            </summary>
+        </member>
+        <member name="M:Check.NotEmpty(System.String)">
+            <summary>
+            Verfies that the string is not null and not empty and returns the string.
+            throws ArgumentNullException, ArgumentOutOfRangeException
+            </summary>
+        </member>
+        <member name="M:Check.NotEmpty(System.Guid)">
+            <summary>
+            Verfies that the Guid is not empty.
+            throws ArgumentOutOfRangeException
+            </summary>
+        </member>
+        <member name="M:Check.NotEmpty``1(``0)">
+            <summary>
+            Verfies that the collection is not null and not empty and returns the collection.
+            throws ArgumentNullException, ArgumentOutOfRangeException
+            </summary>
+        </member>
+        <member name="M:Check.IsEqual``1(``0,``0)">
+            <summary>
+            Verifies that the two values are the same
+            throws ArgumentException
+            </summary>
+        </member>
+        <member name="M:Check.NotEqual``1(``0,``0)">
+            <summary>
+            Verifies that the two values are NOT the same
+            throws ArgumentException
+            </summary>
+        </member>
+        <member name="M:Check.ArraySize``1(``0[],System.Int32,System.Int32)">
+            <summary>
+            Verifies that the array is not empty and has at least min, but not more than max items.
+            throws ArgumentNullExcpetion
+            throws ArgumentOutOfRangeException
+            </summary>
+        </member>
+        <member name="M:Check.InRange``1(``0,``0,``0)">
+            <summary>
+            Verifies that the value is min, max, or between the two.
+            throws ArgumentOutOfRangeException
+            </summary>
+        </member>
+        <member name="M:Check.IsAssignable``1(System.Object)">
+            <summary>
+            Returns (T)value if the object provided can be assinged to a variable of type T
+            throws ArgumentException
+            </summary>
+        </member>
+        <member name="M:Check.IsAssignable(System.Type,System.Object)">
+            <summary>
+            Returns value if the object provided can be assinged to a variable of type toType
+            throws ArgumentException
+            </summary>
+        </member>
+        <member name="M:Check.IsAssignable(System.Type,System.Type)">
+            <summary>
+            Throws ArgumentException if the type fromType cannot be assigned to variable of type toType
+            </summary>
+        </member>
+    </members>
+</doc>

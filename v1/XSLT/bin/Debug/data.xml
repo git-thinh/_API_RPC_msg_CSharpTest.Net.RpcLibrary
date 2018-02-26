@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data>
+    <item>A</item>
+    <tag>select</tag>
+    <type>select</type>
+    <name>a</name>
+    <id>a</id>
+    <value>giá trị = Tiếng Việt</value>
+  </data>
+  <data>
+    <item>B</item>
+    <tag>input</tag>
+    <type>check</type>
+    <name>b</name>
+    <id>b</id>
+    <value>value = English</value>
+  </data>
+</root>

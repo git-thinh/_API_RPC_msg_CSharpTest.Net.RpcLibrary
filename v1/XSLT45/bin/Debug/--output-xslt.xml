@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Workbook xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+    <Styles>
+        <Style ss:ID="Default" ss:Name="Normal">
+            <Alignment ss:Vertical="Bottom"/>
+            <Borders/>
+            <Font/>
+            <Interior/>
+            <NumberFormat/>
+            <Protection/>
+        </Style>
+        <Style ss:ID="s21">
+            <Font ss:Size="22" ss:Bold="1"/>
+        </Style>
+        <Style ss:ID="columnheaders">
+            <Font ss:Size="12" ss:Bold="1"/>
+        </Style>
+        <Style ss:ID="s22">
+            <Font ss:Size="14" ss:Bold="1"/>
+        </Style>
+        <Style ss:ID="s23">
+            <Font ss:Size="10"/>
+        </Style>
+        <Style ss:ID="s24">
+            <Font ss:Size="10" ss:Bold="1"/>
+        </Style>
+    </Styles>
+    <Worksheet ss:Name="data">
+        <Table>
+            <Column ss:AutoFitWidth="0" ss:Width="300"/>
+            <Column ss:AutoFitWidth="0" ss:Width="95"/>
+            <Column ss:AutoFitWidth="0" ss:Width="95"/>
+            <Column ss:AutoFitWidth="0" ss:Width="175"/>
+            <Column ss:AutoFitWidth="0" ss:Width="186"/>
+            <Column ss:AutoFitWidth="0" ss:Width="185"/>
+            <Column ss:AutoFitWidth="0" ss:Width="113"/>
+            <Column ss:AutoFitWidth="0" ss:Width="133"/>
+            <Row ss:AutoFitHeight="0" ss:Height="18">
+                <Cell ss:StyleID="columnheaders">
+                    <Data ss:Type="String">Header1</Data>
+                </Cell>
+                <Cell ss:StyleID="columnheaders">
+                    <Data ss:Type="String">Header2</Data>
+                </Cell>
+                <Cell ss:StyleID="columnheaders">
+                    <Data ss:Type="String">Header3</Data>
+                </Cell>
+                <Cell ss:StyleID="columnheaders">
+                    <Data ss:Type="String">Header4</Data>
+                </Cell>
+                <Cell ss:StyleID="columnheaders">
+                    <Data ss:Type="String">Header5</Data>
+                </Cell>
+                <Cell ss:StyleID="columnheaders">
+                    <Data ss:Type="String">Header6</Data>
+                </Cell>
+                <Cell ss:StyleID="columnheaders">
+                    <Data ss:Type="String">Header7</Data>
+                </Cell>
+                <Cell ss:StyleID="columnheaders">
+                    <Data ss:Type="String">Header8</Data>
+                </Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="18">
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">Folder 1</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">$23</Data>
+                </Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="18">
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">Folder 2</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">$11</Data>
+                </Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="18">
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">Folder 3</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">$44</Data>
+                </Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="18">
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">Product 1</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">324234</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">3.00</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">Kilo</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">1.00</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">No</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">euro 33.33</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">euro 33.33</Data>
+                </Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="18">
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">Product 2</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">4354354</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">1.00</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">Kilo</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">0.50</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">No</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">euro 2.53</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">euro 1.26</Data>
+                </Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="18">
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">Product 3</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">435436</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">10.00</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">Kilo</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">Yes</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">euro 0.36</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">euro 3.60</Data>
+                </Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="18">
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">Product 4</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">435435</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">3.28</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">Kilo</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">1.00</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">No</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">euro 17.38</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">euro 17.38</Data>
+                </Cell>
+            </Row>
+            <Row ss:AutoFitHeight="0" ss:Height="18">
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">Folder 4</Data>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String"/>
+                </Cell>
+                <Cell ss:StyleID="s23">
+                    <Data ss:Type="String">$23</Data>
+                </Cell>
+            </Row>
+        </Table>
+    </Worksheet>
+</Workbook>
