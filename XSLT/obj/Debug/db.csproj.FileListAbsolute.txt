@@ -1,7 +1,0 @@
-F:\_Core\_src\demo001\XSLT\bin\Debug\db.exe
-F:\_Core\_src\demo001\XSLT\bin\Debug\db.pdb
-F:\_Core\_src\demo001\XSLT\obj\Debug\db.exe
-F:\_Core\_src\demo001\XSLT\obj\Debug\db.pdb
-F:\_Core\_src\demo001\XSLT\obj\Debug\db.csprojResolveAssemblyReference.cache
-D:\_CS\_API\XSLT\obj\Debug\db.exe
-D:\_CS\_API\XSLT\obj\Debug\db.pdb

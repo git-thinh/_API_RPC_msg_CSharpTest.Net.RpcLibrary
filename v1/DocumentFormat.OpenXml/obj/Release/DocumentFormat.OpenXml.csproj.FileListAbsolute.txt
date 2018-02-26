@@ -1,4 +1,0 @@
-D:\HTMLDOM_170116\Dev\RnD\MMF\demo001\DocumentFormat.OpenXml\obj\Release\DocumentFormat.OpenXml.src.Framework.CodeTemplate.resources
-D:\HTMLDOM_170116\Dev\RnD\MMF\demo001\DocumentFormat.OpenXml\obj\Release\DocumentFormat.OpenXml.src.Framework.ExceptionMessages.resources
-D:\HTMLDOM_170116\Dev\RnD\MMF\demo001\DocumentFormat.OpenXml\obj\Release\DocumentFormat.OpenXml.src.ofapi.Validation.ValidationResources.resources
-D:\HTMLDOM_170116\Dev\RnD\MMF\demo001\DocumentFormat.OpenXml\obj\Release\DocumentFormat.OpenXml.csproj.GenerateResource.Cache

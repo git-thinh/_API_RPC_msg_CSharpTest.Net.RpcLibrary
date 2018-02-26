@@ -1,4 +1,0 @@
-D:\HTMLDOM_170116\Dev\Protype\v1\XSLT\obj\Debug\db.exe
-D:\HTMLDOM_170116\Dev\Protype\v1\XSLT\obj\Debug\db.pdb
-D:\HTMLDOM_170116\Dev\Protype\v1\XSLT\bin\Debug\db.exe
-D:\HTMLDOM_170116\Dev\Protype\v1\XSLT\bin\Debug\db.pdb
